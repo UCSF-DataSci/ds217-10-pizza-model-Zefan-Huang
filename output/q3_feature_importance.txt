@@ -1,0 +1,8 @@
+MedInc: 0.5475
+AveOccup: 0.1496
+Longitude: 0.0779
+HouseAge: 0.0759
+Latitude: 0.0685
+AveRooms: 0.0477
+AveBedrms: 0.0195
+Population: 0.0133
