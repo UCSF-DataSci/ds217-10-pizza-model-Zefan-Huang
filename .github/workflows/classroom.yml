@@ -19,7 +19,7 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Download latest test files
+    - name: Download latest tests files
       run: |
         mkdir -p .github/test
         curl -o .github/test/test_assignment.py \

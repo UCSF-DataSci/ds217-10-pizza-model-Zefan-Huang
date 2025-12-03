@@ -107,9 +107,9 @@ def test_q2_ml_predictions_csv_format(setup_data):
         assert df[col].dtype in [np.float64, np.float32, float], \
             f"{col} must be numeric"
     
-    # Check reasonable number of rows (should be test set, ~4k rows for California Housing)
+    # Check reasonable number of rows (should be tests set, ~4k rows for California Housing)
     assert 3000 <= len(df) <= 5000, \
-        f"Expected ~4000 rows (test set), got {len(df)}"
+        f"Expected ~4000 rows (tests set), got {len(df)}"
     
     # Check predictions are different between models
     assert not np.allclose(df['lr_predicted_value'], df['rf_predicted_value']), \
@@ -155,9 +155,9 @@ def test_q3_xgboost_model_csv_format(setup_data):
     assert df['xgb_predicted_value'].dtype in [np.float64, np.float32, float], \
         "xgb_predicted_value must be numeric"
     
-    # Check reasonable number of rows (should be test set, ~4k rows for California Housing)
+    # Check reasonable number of rows (should be tests set, ~4k rows for California Housing)
     assert 3000 <= len(df) <= 5000, \
-        f"Expected ~4000 rows (test set), got {len(df)}"
+        f"Expected ~4000 rows (tests set), got {len(df)}"
 
 def test_q3_feature_importance_exists(setup_data):
     """Test that Q3 feature importance text file exists."""

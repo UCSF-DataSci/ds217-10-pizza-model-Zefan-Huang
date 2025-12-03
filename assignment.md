@@ -173,7 +173,7 @@ feature_cols = ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'Av
 X = None  # Replace None with your code
 y = None  # Replace None with your code
 
-# TODO: Split into train and test sets (80/20 split, random_state=42)
+# TODO: Split into train and tests sets (80/20 split, random_state=42)
 X_train, X_test, y_train, y_test = None  # Replace None with your code
 
 print(f"Training set: {len(X_train)} samples")
@@ -189,7 +189,7 @@ Fit a linear regression model and evaluate it on both training and test sets. Co
 lr_model = None  # Replace None with your code
 # Your code here
 
-# TODO: Make predictions on both training and test sets
+# TODO: Make predictions on both training and tests sets
 lr_train_pred = None  # Replace None with your code
 lr_test_pred = None  # Replace None with your code
 
@@ -203,7 +203,7 @@ print("=== Linear Regression Results ===")
 print(f"Training - R²: {lr_train_r2:.4f}, RMSE: {lr_train_rmse:.2f}")
 print(f"Test - R²: {lr_test_r2:.4f}, RMSE: {lr_test_rmse:.2f}")
 
-# Store test predictions for later use
+# Store tests predictions for later use
 lr_pred = lr_test_pred
 lr_r2 = lr_test_r2
 lr_rmse = lr_test_rmse
@@ -219,7 +219,7 @@ Fit a random forest model and evaluate it on both training and test sets.
 rf_model = None  # Replace None with your code
 # Your code here
 
-# TODO: Make predictions on both training and test sets
+# TODO: Make predictions on both training and tests sets
 rf_train_pred = None  # Replace None with your code
 rf_test_pred = None  # Replace None with your code
 
@@ -233,7 +233,7 @@ print("=== Random Forest Results ===")
 print(f"Training - R²: {rf_train_r2:.4f}, RMSE: {rf_train_rmse:.2f}")
 print(f"Test - R²: {rf_test_r2:.4f}, RMSE: {rf_test_rmse:.2f}")
 
-# Store test predictions and metrics for later use
+# Store tests predictions and metrics for later use
 rf_pred = rf_test_pred
 rf_r2 = rf_test_r2
 rf_rmse = rf_test_rmse
@@ -261,7 +261,7 @@ pred_df.to_csv('output/q2_ml_predictions.csv', index=False)
 print(f"\nSaved predictions to output/q2_ml_predictions.csv")
 
 # TODO: Save model comparison to text file
-# Include both train and test metrics
+# Include both train and tests metrics
 # Format: "Linear Regression - Train R²: X.XXXX, Test R²: X.XXXX, Test RMSE: XX.XX\nRandom Forest - Train R²: X.XXXX, Test R²: X.XXXX, Test RMSE: XX.XX"
 #
 # Example output:
@@ -291,7 +291,7 @@ Fit an XGBoost regressor model.
 xgb_model = None  # Replace None with your code
 # Your code here
 
-# TODO: Make predictions on test set
+# TODO: Make predictions on tests set
 xgb_pred = None  # Replace None with your code
 
 # Calculate metrics
